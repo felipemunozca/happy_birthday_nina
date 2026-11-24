@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Yanina</title>
+    <link rel="icon" href="./img/icono2.jpg" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Div donde se cargan las partículas -->
+    <div class="particles" id="particles"></div>
+
+        <div class="container">
+
+        <!-- Regalo interactivo -->
+        <div class="gift-wrapper" id="giftWrapper" onclick="revealGift()">
+            <div class="gift-box">
+                <div class="gift-ribbon-h"></div>
+                <div class="gift-ribbon-v"></div>
+                <div class="gift-lid"></div>
+                <div class="gift-bow"></div>
+            </div>
+            <div class="tap-text">Toca para abrir</div>
+        </div>
+
+        <!-- Tarjeta oculta -->
+        <div class="glass-card" id="birthdayCard">
+            <img src="./img/perfil.jpg" alt="my queen" class="card-img">
+
+            <h1>Feliz Cumpleaños Yanina ❤️</h1>
+
+            <div class="button-container">
+                <button class="btn-interactive" onclick="openMessageModal()">Leer Mensaje</button>
+
+                <button class="btn-interactive" onclick="downloadCoupon()">Descargar Regalo</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- Modal con mensaje de felicitaciones. -->
+    <div class="modal-overlay" id="messageModal">
+        <div class="modal-content">
+            <h2>Querida Yanina</h2>
+            <p>En este dia especial quiero desearte un muy feliz cumpleaños, espero que hoy tengas un día muy bonito, que recibas mucho cariño y que puedas disfrutar junto a tus seres queridos.</p>
+            <p>Que este nuevo año te traiga paz, ánimos para intentar cosas nuevas, energía para afrontar desafíos y momentos que te hagan sentir acompañada y querida.</p>
+            <!----
+            <p>Ojalá nunca pierdas esa esencia tuya, que sigas creciendo, aprendiendo, descubriendo cosas nuevas y que incluso cuando las cosas no salgan como esperas, sigas intentándolo. Recuerda que te mereces cada logro porque te has esforzado mucho y tu trabajo duro, tu inteligencia y tu capacidad de salir adelante son muy grandes.</p>
+            -->
+            <p>Como siempre te digo, Te deseo sinceramente lo mejor del mundo mundial. Que seas feliz, que te sientas querida, que te vaya bonito en la vida y que nunca olvides lo valiosa que eres.</p>
+            <p>Un abrazo grande y que tengas un muy lindo cumpleaños.</p>
+            <button class="btn-close" onclick="closeMessageModal()">Cerrar Mensaje</button>
+        </div>
+    </div>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
