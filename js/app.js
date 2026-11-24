@@ -125,7 +125,7 @@ function closeMessageModal() {
  * Función para descargar el cupón
  */
 function downloadCoupon() {
-    const coupon = "../img/cupon.png"; // Ruta de la imagen
+    const coupon = "./img/cupon.png"; // Ruta de la imagen
 
     const enlace = document.createElement("a");
     enlace.href = coupon;
